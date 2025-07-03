@@ -1,5 +1,5 @@
-import heroSectionVideo from "@/../public/videos/hero-section-video.mp4";
 import { Lato, Playfair_Display } from "next/font/google";
+import Video from "next-video";
 
 const PlayfairDisplayFont = Playfair_Display({
   subsets: ["latin"],
@@ -24,7 +24,8 @@ function HeroSection() {
             loop
             playsInline
           >
-            <source src={heroSectionVideo} type="video/mp4" />
+            <source src="/videos/hero-section-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
           </video>
 
           {/* Black Overlay */}
